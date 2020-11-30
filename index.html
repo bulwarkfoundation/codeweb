@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Cache-Control" content="no-store" max-age="31536000" />
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>BULWARK</title>
+    <meta name="description" content="BULWARK">    
+    <meta name="keywords" content="BULWARK">
+    <meta property="og:title" content="BULWARK">
+    <meta property="og:description" content="BULWARK">
+    <meta property="og:type" content="image">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:url" content="#0">
+    <meta name="twitter:card" content="logo.png">
+    <link rel="canonical" href="#0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<style>
+
+		html 
+		  {
+			width: 100%;
+			height: 100%;
+			background: #99c68f !important; /* Old browsers #2504ba */
+			/*background: -moz-linear-gradient(top,  #354d35 0%, #4c694c 100%); /* FF3.6-15 */*/
+			/*background: -webkit-linear-gradient(top, #354d35 0%,#4c694c 100%); /* Chrome10-25,Safari5.1-6 */*/
+			/*background: linear-gradient(to bottom,  #354d35 0%,#4c694c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */*/
+			/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#354d35', endColorstr='#4c694c',GradientType=0 ); /* IE6-9 */*/
+		  }
+		canvas
+		{
+				border:none;
+				outline:none;
+				max-width: 100%;
+				max-height: 100% !important;
+		} 
+		
+		.logo {
+        position: absolute;
+    width: 12%;
+    left: 2%;
+    top: 2%;
+}
+
+.logo a{
+    position: relative;
+    width: 100%;
+    float: left;
+}
+.logo a img{
+    position: relative;
+    width: 100%;
+    float: left;
+}
+
+.attackplace{
+    position: absolute;
+    width: 30%;
+    left: 5%;
+    top: 35%;
+}
+.attackplace img{
+    position: relative;
+    width: 100%;
+    float: left;
+}
+
+
+.attachinfo{
+	position: absolute;
+    top: 50%;
+    left: 6%;
+    width: 35%;
+}
+
+.info_description{
+	position: relative;
+	float: left; 
+	width: 49%;
+	font-size: 15px;
+	border-right: 1px solid #333;
+}
+.info_description_hn{position: relative;
+	float: left; 
+	width: 49%;
+	font-size: 15px; 
+	margin-left: 2%;
+}
+.marchingsoon {
+    position: absolute;
+    top: 65%;
+    left: 6%;
+    font-size: 16px;
+    cursor: pointer;
+}
+.nextline {
+	position: absolute;
+    background-color: #ccc;
+    width: 100px;
+    height: 2px;
+    top: 70%;
+    left: 6%;
+    transition: width 1s;
+    cursor: pointer;
+}
+.marchingsoon:hover + .nextline {
+	background-color: #ffffff;
+	width: 140px;
+    height: 2px;
+}
+.nextline:hover {
+	background-color: #ffffff;
+	width: 140px;
+    height: 2px;
+}
+#statue{position: absolute; top: 0; width: 100%; height: 100%;z-index: -1;}
+#bgMusicbtn{
+	position: fixed;
+    bottom: 5px;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #475c4f;
+    cursor: pointer;
+    font-size: 14px;
+    background: transparent;
+    outline: none;
+}
+#bgMusicbtn:hover {
+    background: #495a49;
+    color: #ffffff;
+    box-shadow: 0px 0px 4px 0px #100404;
+}
+.partners{
+	position: absolute;
+	right: 2%;
+	bottom: 2%;
+	width: 20%;
+}
+.partners_info{
+	position: relative;
+	float: left;
+	width: 50%;
+	text-align: center;
+	font-size: 14px;
+}
+.partners_info img{
+	max-width: 80%;
+	margin: 0px 10%;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 360px) {
+  .logo {width: 40%;}
+  .attackplace {width: 36%;left: 2%;top: 20%;}
+  .attachinfo {
+    top: 27%;
+    left: 3%;
+    width: 65%;
+	}
+  .info_description {
+    width: 95%;
+    font-size: 11px;
+    border-right: 0px;
+    border-bottom: 0px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+	}
+	.info_description_hn {
+    width: 95%;
+    font-size: 11px;
+	}
+	.partners {
+	width: 55%;
+    bottom: 0px;
+	}
+	.partners_info {
+    position: relative;
+    float: left;
+    width: 50%;
+    text-align: center;
+    font-size: 10px;
+	}
+	#bgMusicbtn {
+    bottom: 4%;
+    left: 2%;
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+	}
+	.marchingsoon {
+    font-size: 15px;
+    top: 50%;}
+
+    .nextline {
+    width: 100px;
+    top: 55%;    
+	}
+
+	.marchingsoon:hover + .nextline {
+	background-color: #ffffff;
+	width: 120px;
+	}
+	.nextline:hover {
+		background-color: #ffffff;
+		width: 120px;
+	}
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 620px) {
+	.attackplace {
+    top: 25%;
+	}
+	.attachinfo {
+    top: 35%;
+    width: 90%;
+	}
+}
+
+	</style>
+</head>
+<body style="overflow-y: hidden;">
+
+	<div class="logo">
+		<a class="navbar-brand" href="#0"><img alt="BULWARK" src="logo.png"></a>
+	</div>
+
+	<div class="attackplace">
+		<img alt="PULWAMA" src="pulwama.png">
+	</div>
+
+	<div class="attachinfo">
+		<div class="info_description">"Martyrs don't need our sympathy. They need our resepect and we owe them the respect."</div>
+		<div class="info_description_hn">शहीदों को हमारी सहानुभूति की जरूरत नहीं है। उन्हें हमारे संकल्प की आवश्यकता है और हम उनका सम्मान करते हैं।
+		</div>
+	</div>
+
+	<div class="marchingsoon">Marching Soon</div>
+
+	<div class="nextline">&nbsp;</div>
+
+	<div class="partners">
+		<div class="partners_info">
+			<img alt="Tech_Biteffort" src="partners/biteffort.png">
+			<div class="techpartname">Technical Partners</div>
+		</div>
+		<div class="partners_info">
+			<img alt="Tech_Biteffort" src="partners/hype.png">
+			<div class="techpartname">Marketing Partners</div>
+		</div>
+	</div>
+
+	<div id="statue">
+		 <button id = "bgMusicbtn" onclick="togglePlay()">
+		 	<i class="fa fa-play" id="play" aria-hidden="true"></i>
+		 	<i class="fa fa-pause" id="pause" aria-hidden="true"></i>
+		 </button> 
+	</div>
+
+
+
+	<script src="js/three.js"></script>
+	<script src="js/OrbitControls.js"></script>
+	<script src="js/GLTFLoader.js"></script>
+	<script src="js/statue.js"></script>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$("#pause").hide();
+		$(document).ready(function(){
+		  $("#play").click(function(){
+		    $("#pause").show();
+		    $("#play").hide();
+		  });
+		  $("#pause").click(function(){
+		    $("#play").show();
+		    $("#pause").hide();
+		  });
+		});
+	</script>
+
+</body>
+</html>
